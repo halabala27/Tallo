@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets theme-color for the UI, especially used for mobiles -->
+    <meta name="theme-color" content="#3a5964" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="description" content="" />
+    <title>Video Kursus 1 - Tallo</title>
+    <link rel="shortcut icon" type="x-icon" href="img/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="videoquiz.js"></script>
+    <script defer src="is-logged-in.js"></script>
+    <script defer src="redirect.js"></script>
+  </head>
+
+  <body class="courses-body">
+    <a class="close-button" href="courses.html"></a>
+
+    <div class="video-container hidden-mobile">
+      <video id="quiz-video" controls></video>
+
+      <div id="choice-container" style="display: none">
+        <div class="choice-block">
+          <p id="choice-text-a" class="choice-description"></p>
+          <button class="choice-button cta-button" data-choice="A">Vælg</button>
+        </div>
+        <div class="choice-block">
+          <p id="choice-text-b" class="choice-description"></p>
+          <button class="choice-button cta-button" data-choice="B">Vælg</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="course-mobile" class="course-content">
+      <h2>Tag quizzen her:</h2>
+      <h3>Test din viden om kommunikation's nedtrapning på denne quiz</h3>
+      <a class="cta-button" href="quiz.html">Start Quiz</a>
+    </section>
+
+    <section class="intro-section">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h1>konfliktnedtrapning</h1>
+          <h2>Samtale med Lars</h2>
+          <p>
+            <strong>Intro:</strong> Du opdager, at du er sat på en vagt, du ikke
+            kan tage. Hvordan håndterer du det?
+          </p>
+          <p>
+            <strong>Godt valg:</strong> Du forklarer situationen respektfuldt og
+            beder om hjælp. Lars forstår dig og peger dig i retning af mulige
+            løsninger. I samarbejder om at finde en løsning.
+          </p>
+          <p>
+            <strong>Dårligt valg:</strong> Du reagerer aggressivt og angriber
+            Lars personligt. Det skaber konflikt og ødelægger jeres samarbejde.
+          </p>
+          <p>
+            Den første samtale sætter tonen for resten af situationen. En
+            samarbejdende og respektfuld tilgang viser ansvar og styrker
+            fællesskabet – det øger chancen for, at kolleger vil hjælpe dig, nu
+            og fremover. Omvendt skaber en aggressiv eller krævende tone
+            mistillid og modstand, hvilket gør det svært at finde en løsning.
+            Det handler ikke kun om at få sin vilje, men om at skabe fælles
+            retning.
+          </p>
+        </div>
+        <div class="intro-image hidden-mobile">
+          <img src="img/goodone-1.jpg" alt="samtale med Lars, det gode valg." />
+          <img
+            src="img/badone-pic-1.jpg"
+            alt="samtale med Lars, det dårlige valg."
+          />
+        </div>
+      </div>
+
+      <div class="intro-content reverse">
+        <div class="intro-image">
+          <img
+            src="img/goodone-pic-2.jpg"
+            alt="Telefonopkald med Petra, det gode valg."
+          />
+          <img
+            src="img/badone-pic.png"
+            alt="Telefonopkald med Petra, det dårlige valg."
+          />
+        </div>
+        <div class="intro-text">
+          <h2>Telefonopkald med Petra</h2>
+          <p>
+            <strong>Intro:</strong> Du ringer til Petra for at finde en afløser.
+            Dit valg af tone bliver afgørende.
+          </p>
+          <p>
+            <strong>Godt valg:</strong> Du er høflig og tydelig. Selvom Petra
+            ikke kan tage vagten, giver hun dig forslag og lover at hjælpe, hvis
+            du ikke finder nogen. Du åbner for samarbejde.
+          </p>
+          <p>
+            <strong>Dårligt valg:</strong> Du presser hende med krav og dårlig
+            attitude. Petra bliver frustreret og lægger på. Du brænder en vigtig
+            bro.
+          </p>
+          <p>
+            Petra-samtalen viser, hvordan vi i pressede situationer let overser
+            andres grænser og behov. En venlig og tydelig tone skaber åbenhed og
+            fælles ansvar – og gør Petra mere villig til at hjælpe. Men en
+            krævende eller nedladende tilgang skaber modstand og kan ødelægge
+            relationen, så du risikerer at stå alene med problemet.
+          </p>
+        </div>
+      </div>
+
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2>Mødet med Signe</h2>
+          <p>
+            I sidste scene ser vi, hvad der sker, når kommunikationen er
+            tydelig, respektfuld og imødekommende. Maja forklarer sin situation
+            på en ordentlig måde – og Signe føler sig anerkendt og hjælper
+            gerne.
+          </p>
+          <p>
+            Det viser, at god dialog ikke kun løser praktiske udfordringer, men
+            styrker relationen og skaber en kultur, hvor vi hjælper hinanden.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img src="img/goodone-pic-3.png" alt="samtale med Signe." />
+        </div>
+      </div>
+    </section>
+
+    <section id="course-list" class="course-container">
+      <div class="course-box">
+        <div class="intro-image course-img">
+          <img
+            src="img/stock-img-11.webp"
+            alt="Glade kolleger, efter at have taget kurset."
+          />
+        </div>
+        <div>
+          <h2>Hvad får man ud af kurset?</h2>
+          <p>
+            Dette kursus viser, hvordan din tilgang til konflikter – både i tone
+            og handling – påvirker hele forløbet. Ved at vælge empatisk
+            kommunikation, ansvarlighed og samarbejde, opstår bedre løsninger,
+            mindre stress og stærkere relationer. Du får praktisk erfaring med
+            at nedtrappe konflikter og skabe en positiv arbejdskultur – én
+            samtale ad gangen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer left">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/logo-normal.png" alt="Tallo Logo"
+            /></a>
+          </div>
+          <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
+        </div>
+
+        <div class="footer middle">
+          <h4>Navigation</h4>
+          <a href="index.html">Hjem</a>
+          <a href="courses.html">Kurser</a>
+          <a href="about-us.html">Om os</a>
+          <a href="contact.html">Kontakt os</a>
+        </div>
+
+        <div class="footer right">
+          <h4>Kontakt oplysninger</h4>
+          <a href="mailto:contact@cphbusiness.dk">E-mail: tallo@gmail.com</a>
+          <a href="tel:+4560122584">Tlf: +45 60 12 25 84</a>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-line">
+        <div class="line"></div>
+      </div>
+    </footer>
+  </body>
+</html>

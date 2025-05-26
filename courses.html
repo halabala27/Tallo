@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Sets theme-color for the UI, especially used for mobiles -->
+  <meta name="theme-color" content="#3a5964" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Kommunikations kurser for erhvervsmarkedet og arbejdspladser." />
+  <title>Kurser - Tallo</title>
+  <link rel="shortcut icon" type="x-icon" href="img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="course-search.js"></script>
+  <script defer src="is-logged-in.js"></script>
+  <script defer src="burgermenu.js"></script>
+  <script defer src="btt.js"></script>
+  <script defer src="login.js"></script>
+</head>
+
+<body>
+  <button class="btt"></button>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo-normal.png" alt="Logo" /></a>
+    </div>
+
+    <!-- Burger button (only shows on mobile) -->
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="mobile-nav">
+      <a href="index.html">Hjem</a>
+      <a class="active" href="courses.html">Kurser</a>
+      <a  href="about-us.html">Om os</a>
+      <a href="contact.html">Kontakt os</a>
+      <!-- Login / Profil -->
+      <a href="login.html" class="login-btn" id="login-button">Log ind</a>
+      <a href="profile.html" class="login-btn" id="profile-link" style="display: none;">Min profil</a>
+    </nav>
+  </header>
+
+  <overfold class="about-hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Mine kurser</h1>
+
+        <p>
+          Her kan du se og starte dine kurser. Det første skridt mod god
+          <strong>kommunikation</strong> er forståelse.
+        </p>
+      </div>
+    </div>
+  </overfold>
+
+  <div class="waves"></div>
+  <section class="intro-section kurser">
+    <div class="kursus-content">
+      <h2>Konfliktnedtrapning</h2>
+      <h3>Varighed: 10 minutter</h3>
+      <p class="feeder-text">
+        I dette kursus får du et indblik i, hvordan kommunikation kan spille
+        en afgørende rolle, når der opstår uenighed om vagter.
+      </p>
+
+      <div class="kursus-button">
+        <a id="start-course-btn" class="cta-button" target="_blank" href="contact-course-1.html">Start kursus</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="all-courses">
+    <main class="search-bar">
+      <div class="search-bar-content">
+        <div class="line"></div>
+
+        <div class="search-bar-center">
+          <h2>Alle kurser</h2>
+
+          <div class="input-wrapper">
+            <svg class="search-icon" fill="#ccc" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path d="M495,466.1l-110.1-110.1c31.1-37.7,48-84.6,48-134
+        c0-56.4-21.9-109.3-61.8-149.2C331.3,32.9,278.3,11,222,11
+        c-56.3,0-109.3,21.9-149.2,61.8C32.9,112.6,11,165.6,11,222
+        c0,56.3,21.9,109.3,61.8,149.2C112.6,411,165.6,433,222,433
+        c49.5,0,96.4-16.9,134-48l110.1,110c8,8,20.9,8,28.9,0
+        C503,487,503,474.1,495,466.1z M101.7,342.2c-32.2-32.1-49.9-74.8-49.9-120.2
+        c0-45.4,17.7-88.2,49.8-120.3c32.1-32.1,74.8-49.8,120.3-49.8
+        c45.4,0,88.2,17.7,120.3,49.8c32.1,32.1,49.8,74.8,49.8,120.3
+        c0,45.4-17.7,88.2-49.8,120.3c-32.1,32.1-74.9,49.8-120.3,49.8
+        C176.3,392,133.6,374.3,101.7,342.2z" />
+            </svg>
+            <input type="text" id="course-search" placeholder="Søg kursus" />
+          </div>
+        </div>
+
+        <div class="line"></div>
+      </div>
+    </main>
+
+    <section id="course-list" class="course-container">
+      <div class="course-box">
+        <div class="intro-image course-img">
+          <img src="img/stock-img-7.webp" alt="Kursus 1 billede" />
+        </div>
+
+        <div>
+          <h2>Konfliktnedtrapning -</h2>
+          <h2>Mundtlig Kommunikation</h2>
+          <h4>Varighed: 10 minutter</h4>
+
+          <p>
+            I vores interaktive scenarier vælger du selv, hvordan du reagerer
+            i korte samtaler. Dine valg påvirker direkte samtalens forløb og
+            stemning, så du kan se, hvordan forskellige måder at kommunikere
+            på enten kan skabe ro eller eskalere konflikten. Det giver dig
+            praktisk erfaring i at håndtere svære situationer med større
+            forståelse.
+          </p>
+
+          <a class="cta-button" href="contact-course-1.html">Start kursus</a>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="intro-image course-img">
+          <img src="img/stock-img-5.webp" alt="kursus 2 billede" />
+        </div>
+
+        <div>
+          <h2>Konfliktnedtrapning -</h2>
+          <h2>Skriftlig Kommunikation</h2>
+          <h3>Varighed: 10 minutter</h3>
+
+          <p>
+            I kurset skriftlig konfliktnedtrapning lærer deltagerne at
+            kommunikere klart og respektfuldt skriftligt for at undgå
+            misforståelser og konflikter. Fokus er på tone, ordvalg og
+            teknikker til at skabe konstruktiv dialog – også i svære beskeder.
+          </p>
+
+          <a class="cta-button" href="not-ready.html">Start kursus</a>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="intro-image course-img">
+          <img src="img/stock-img-8.webp" alt="Kursus 3 billede" />
+        </div>
+
+        <div>
+          <h2>Miskommunikation med sprogbarriere</h2>
+          <h3>varighed: 15 minutter</h3>
+
+          <p>
+            I vores kursus om sprogbarrierer lærer deltagerne at genkende,
+            hvordan forskelle i sprog og kulturelle nuancer kan føre til
+            misforståelser. Vi giver værktøjer til at kommunikere klart og
+            enkelt, så budskabet bliver forstået, og samarbejdet styrkes –
+            også når sproget ikke er fælles.
+          </p>
+
+          <a class="cta-button" href="not-ready.html">Start kursus</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer left">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-normal.png" alt="Tallo Logo" /></a>
+        </div>
+        <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
+      </div>
+
+      <div class="footer middle">
+        <h4>Navigation</h4>
+        <a href="index.html">Hjem</a>
+        <a href="courses.html">Kurser</a>
+        <a href="about-us.html">Om os</a>
+        <a href="contact.html">Kontakt os</a>
+      </div>
+
+      <div class="footer right">
+        <h4>Kontakt oplysninger</h4>
+        <a href="mailto:contact@cphbusiness.dk">E-mail: tallo@gmail.com</a>
+        <a href="tel:+4560122584">Tlf: +45 60 12 25 84</a>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-line">
+      <div class="line"></div>
+    </div>
+  </footer>
+</body>
+
+</html>
