@@ -17,6 +17,7 @@
     <script defer src="btt.js"></script>
     <script defer src="burgermenu.js"></script>
     <script defer src="login.js"></script>
+    <script defer src="carousel.js"></script>
   </head>
 
   <body>
@@ -106,7 +107,10 @@
         forståelse.
       </p>
 
-      <div class="courses-content">
+      <button class="scroll-btn left-btn">‹</button>
+      <button class="scroll-btn right-btn">›</button>
+
+      <div class="courses-content" id="carousel">
         <div class="box left">
           <div class="top top-left"></div>
 
@@ -157,6 +161,8 @@
           </div>
         </div>
       </div>
+
+      <div class="dots" id="dots"></div>
     </section>
     <!-- Here comes the Footer -->
     <footer>
