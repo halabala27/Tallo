@@ -193,14 +193,18 @@ nav a:hover {
   box-shadow: #1c1c1c 0px 0px 10px 0px;
   will-change: opacity;
   transform: translateZ(0);
+
+  /* Add this: */
+  display: block;             /* always block */
+  pointer-events: none;       /* disable clicks when hidden */
 }
 
 .btt.visible {
-  display: block;
   opacity: 1;
+  pointer-events: auto;       /* enable clicks when visible */
   cursor: pointer;
-  pointer-events: all;
 }
+
 
 /* Hover animation */
 .cta-button:hover,
