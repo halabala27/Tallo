@@ -11,32 +11,43 @@
     <script defer src="is-logged-in.js"></script>
     <script defer src="burgermenu.js"></script>
     <script defer src="btt.js"></script>
+    <script defer src="goback.js"></script>
     
   </head>
 
   <body>
-    <button class="btt"></button>
 
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <a href="index.html"
-          ><img src="img/logo-normal.png" alt="Tallo logo"
-        /></a>
-      </div>
-      <button class="burger" id="burger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-          <nav id="mobile-nav">
+
+  <button class="btt"></button>
+
+  <header>
+
+    <div class="logo">
+      <a href="index.html"><img src="img/logo-normal.png" alt="Tallos Logo"></a>
+    </div>
+
+    <!-- Burger menu (only shows on mobile) -->
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <nav id="mobile-nav">
       <a href="index.html">Hjem</a>
       <a href="courses.html">Kurser</a>
-      <a href="about-us.html">Om os</a>
-      <a href="contact.html">Kontakt os</a>
+      <a  href="about-us.html">Om os</a>
+      <a class="active" href="contact.html">Kontakt os</a>
       <!-- Login / Profil -->
       <a href="login.html" class="login-btn" id="login-button">Log ind</a>
       <a href="profile.html" class="login-btn" id="profile-link" style="display: none;">Min profil</a>
     </nav>
-    </header>
+
+  </header>
+
+
+  
 
     <!-- 404 content -->
     <div class="notfound-page">
@@ -44,7 +55,7 @@
         <h1>404 – Siden blev ikke fundet</h1>
         <h2>Ups! Siden findes ikke.</h2>
         <p>Det ser ud til, at den side du leder efter, ikke findes.</p>
-        <a href="index.html" class="cta-button">Tilbage til forsiden</a>
+        <button class="cta-button close-button">Tilbage til forsiden</button>
       </main>
 
       <!-- Here comes the Footer -->

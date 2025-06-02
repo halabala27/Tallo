@@ -917,7 +917,7 @@ nav a:hover {
   background-color: var(--sekunder-color);
 }
 
-.close-button {
+.close {
   all: unset;
   background-image: url("img/close-2.svg");
   height: var(--gap-2);
@@ -1435,7 +1435,7 @@ footer {
     position: absolute;
     justify-content: space-between;
     /* Space out lines */
-    z-index: 1000;
+    z-index: 1001;
     right: var(--gap-3);
   }
 
@@ -1446,6 +1446,7 @@ footer {
     margin: 2px;
     padding: 3px;
     border-radius: var(--radius-3);
+  
   }
 
   nav {
@@ -1459,7 +1460,7 @@ footer {
     gap: var(--gap-1);
     padding: var(--gap-2);
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    z-index: var(--gap-0);
+    z-index: 1000;
     display: none;
     /* Always use flex */
   }

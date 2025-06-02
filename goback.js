@@ -1,14 +1,18 @@
-function goBackOrRedirect() {
-  const user = JSON.parse(localStorage.getItem("loggedInUser"));
-  const redirect = localStorage.getItem("redirectAfterLogin");
-  const fallback = "profile.html"; // Default destination after login
+document.addEventListener("DOMContentLoaded", function () {
+    const closeButton = document.querySelector(".close-button");
 
-  if (redirect) {
-    localStorage.removeItem("redirectAfterLogin");
-    window.location.href = redirect;
-  } else if (user) {
-    window.location.href = fallback;
-  } else {
-    window.location.href = "login.html"; // Safety net
-  }
-}
+    if (closeButton) {
+        closeButton.addEventListener("click", function () {
+            const currentUrl = window.location.href;
+            const referrer = document.referrer;
+
+            // Check if referrer exists and is different from current page
+            if (referrer && referrer !== currentUrl) {
+                window.location.href = referrer;
+            } else {
+                // Fallback to index.html if no valid referrer or same page
+                window.location.href = 'index.html';
+            }
+        });
+    }
+});
