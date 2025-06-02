@@ -917,7 +917,7 @@ nav a:hover {
   background-color: var(--sekunder-color);
 }
 
-.close {
+.go-back {
   all: unset;
   background-image: url("img/close-2.svg");
   height: var(--gap-2);
