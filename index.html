@@ -1,208 +1,201 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Sets theme-color for the UI, especially used for mobiles -->
-    <meta name="theme-color" content="#3a5964" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Effektiv kommunikation starter med forståelse – opdag hvordan vi bygger broer mellem mennesker."
-    />
-    <title>Tallo - Forside</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="is-logged-in.js"></script>
-    <script defer src="btt.js"></script>
-    <script defer src="burgermenu.js"></script>
-    <script defer src="login.js"></script>
-    <script defer src="carousel.js"></script>
-  </head>
 
-  <body>
-    <button class="btt"></button>
-    <!-- Navigation -->
-    <header>
-      <div class="logo">
-        <a href="index.html"
-          ><img src="img/logo-normal.png" alt="Tallo Logo"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Sets theme-color for the UI, especially used for mobiles -->
+  <meta name="theme-color" content="#3a5964" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description"
+    content="Effektiv kommunikation starter med forståelse – opdag hvordan vi bygger broer mellem mennesker." />
+  <title>Tallo - Forside</title>
+  <link rel="icon" type="image/x-icon" href="img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="is-logged-in.js"></script>
+  <script defer src="btt.js"></script>
+  <script defer src="burgermenu.js"></script>
+  <script defer src="login.js"></script>
+  <script defer src="carousel.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y6X7QG16Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y6X7QG16Y');
+</script>
+
+<body>
+  <button class="btt"></button>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo-normal.png" alt="Tallo Logo" /></a>
+    </div>
+
+    <!-- Burger Menu (only shows on mobile) -->
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="mobile-nav">
+      <a class="active" href="index.html">Hjem</a>
+      <a href="courses.html">Kurser</a>
+      <a href="about-us.html">Om os</a>
+      <a href="contact.html">Kontakt os</a>
+      <!-- Login / Profil -->
+      <a href="login.html" class="login-btn" id="login-button">Log ind</a>
+      <a href="profile.html" class="login-btn" id="profile-link" style="display: none">Min profil</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div>
+      <h1>Styrk din Kommunikation</h1>
+      <p>
+        Effektiv kommunikation starter med <strong>forståelse</strong> – vores
+        kurser viser, hvordan man bygger broer mellem mennesker.
+      </p>
+
+      <a class="cta-button" href="courses.html">Se kurser</a>
+    </div>
+
+    <div class="intro-image hidden-mobile">
+      <img src="img/stock-img-4.webp" alt="Folk der kommunikerer" />
+    </div>
+  </main>
+
+  <div class="waves"></div>
+
+  <section class="intro-section">
+    <!-- Wave-top SVG -->
+
+    <div class="intro-content">
+      <div class="intro-image">
+        <img src="img/stock-img-1.webp" alt="To piger kommunikere sammen" />
       </div>
 
-      <!-- Burger Menu (only shows on mobile) -->
-      <button class="burger" id="burger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="intro-text">
+        <h2>Hvad er Tallo</h2>
 
-      <nav id="mobile-nav">
-        <a class="active" href="index.html">Hjem</a>
+        <p>
+          Hos Tallo ved vi, at kommunikation er afgørende – både mundtligt og
+          skriftligt. Forskelle i tone, sprog og kultur kan føre til
+          misforståelser, men med klarhed, respekt og empati hjælper vi
+          virksomheder med at skabe et arbejdsmiljø, hvor alle bliver hørt og
+          forstået.
+        </p>
+
+        <a class="cta-button" href="about-us.html">Læs om os</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses">
+    <h2>Vores kurser</h2>
+    <p>
+      Oplever du ofte, at skriftlige beskeder bliver misforstået? Vores
+      interaktive kursusvideoer lærer dig at kommunikere klart og med empati
+      på tværs af sprog og kultur, så du undgår konflikter og skaber bedre
+      forståelse.
+    </p>
+
+    <button class="scroll-btn left-btn">‹</button>
+    <button class="scroll-btn right-btn">›</button>
+
+    <div class="courses-content" id="carousel">
+      <div class="box left">
+        <div class="top top-left"></div>
+
+        <div class="bottom">
+          <div class="bottom-text">
+            <h4>Konfliktnedtrapning - mundtlig kominikation</h4>
+            <p>
+              I vores interaktive scenarier vælger du reaktion, som påvirker
+              samtalen.
+            </p>
+          </div>
+
+          <div><a class="cta-button" href="courses.html">Se kursus</a></div>
+        </div>
+      </div>
+      <div class="box middle">
+        <div class="top top-middle">
+          <img src="img/overlay.png" alt="Kommer Snart overlay" />
+        </div>
+
+        <div class="bottom">
+          <div class="bottom-text">
+            <h4>Konfliknedtrapning - Kommunikation på skrift</h4>
+            <p>
+              I kurset lærer du at skrive klart og respektfuldt for at undgå
+              konflikter.
+            </p>
+          </div>
+          <div><a class="cta-button" href="courses.html">Se kursus</a></div>
+        </div>
+      </div>
+
+      <div class="box right">
+        <div class="top top-right">
+          <img src="img/overlay.png" alt="Kommer Snart overlay" />
+        </div>
+
+        <div class="bottom">
+          <div class="bottom-text">
+            <h4>Miskommunikation med sprogbarriere</h4>
+            <p>
+              Lær at spotte, hvordan sprog- og kulturforskelle skaber
+              misforståelser.
+            </p>
+          </div>
+
+          <div><a class="cta-button" href="courses.html">Se kursus</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </section>
+  <!-- Here comes the Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer left">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-normal.png" alt="Tallo Logo" /></a>
+        </div>
+        <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
+      </div>
+
+      <div class="footer middle">
+        <h4>Navigation</h4>
+        <a href="index.html">Hjem</a>
         <a href="courses.html">Kurser</a>
         <a href="about-us.html">Om os</a>
         <a href="contact.html">Kontakt os</a>
-        <!-- Login / Profil -->
-        <a href="login.html" class="login-btn" id="login-button">Log ind</a>
-        <a
-          href="profile.html"
-          class="login-btn"
-          id="profile-link"
-          style="display: none"
-          >Min profil</a
-        >
-      </nav>
-    </header>
-
-    <main class="hero">
-      <div>
-        <h1>Styrk din Kommunikation</h1>
-        <p>
-          Effektiv kommunikation starter med <strong>forståelse</strong> – vores
-          kurser viser, hvordan man bygger broer mellem mennesker.
-        </p>
-
-        <a class="cta-button" href="courses.html">Se kurser</a>
       </div>
 
-      <div class="intro-image hidden-mobile">
-        <img src="img/stock-img-4.webp" alt="Folk der kommunikerer" />
-      </div>
-    </main>
-
-    <div class="waves"></div>
-
-    <section class="intro-section">
-      <!-- Wave-top SVG -->
-
-      <div class="intro-content">
-        <div class="intro-image">
-          <img src="img/stock-img-1.webp" alt="To piger kommunikere sammen" />
-        </div>
-
-        <div class="intro-text">
-          <h2>Hvad er Tallo</h2>
-
-          <p>
-            Hos Tallo ved vi, at kommunikation er afgørende – både mundtligt og
-            skriftligt. Forskelle i tone, sprog og kultur kan føre til
-            misforståelser, men med klarhed, respekt og empati hjælper vi
-            virksomheder med at skabe et arbejdsmiljø, hvor alle bliver hørt og
-            forstået.
-          </p>
-
-          <a class="cta-button" href="about-us.html">Læs om os</a>
+      <div class="footer right">
+        <h4>Kontakt oplysninger</h4>
+        <a href="mailto:contact@cphbusiness.dk">E-mail: tallo@gmail.com</a>
+        <a href="tel:+4560122584">Tlf: +45 60 12 25 84</a>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="courses">
-      <h2>Vores kurser</h2>
-      <p>
-        Oplever du ofte, at skriftlige beskeder bliver misforstået? Vores
-        interaktive kursusvideoer lærer dig at kommunikere klart og med empati
-        på tværs af sprog og kultur, så du undgår konflikter og skaber bedre
-        forståelse.
-      </p>
+    <div class="footer-line">
+      <div class="line"></div>
+    </div>
+  </footer>
+</body>
 
-      <button class="scroll-btn left-btn">‹</button>
-      <button class="scroll-btn right-btn">›</button>
-
-      <div class="courses-content" id="carousel">
-        <div class="box left">
-          <div class="top top-left"></div>
-
-          <div class="bottom">
-            <div class="bottom-text">
-              <h4>Konfliktnedtrapning - mundtlig kominikation</h4>
-              <p>
-                I vores interaktive scenarier vælger du reaktion, som påvirker
-                samtalen.
-              </p>
-            </div>
-
-            <div><a class="cta-button" href="courses.html">Se kursus</a></div>
-          </div>
-        </div>
-        <div class="box middle">
-          <div class="top top-middle">
-            <img src="img/overlay.png" alt="Kommer Snart overlay" />
-          </div>
-
-          <div class="bottom">
-            <div class="bottom-text">
-              <h4>Konfliknedtrapning - Kommunikation på skrift</h4>
-              <p>
-                I kurset lærer du at skrive klart og respektfuldt for at undgå
-                konflikter.
-              </p>
-            </div>
-            <div><a class="cta-button" href="courses.html">Se kursus</a></div>
-          </div>
-        </div>
-
-        <div class="box right">
-          <div class="top top-right">
-            <img src="img/overlay.png" alt="Kommer Snart overlay" />
-          </div>
-
-          <div class="bottom">
-            <div class="bottom-text">
-              <h4>Miskommunikation med sprogbarriere</h4>
-              <p>
-                Lær at spotte, hvordan sprog- og kulturforskelle skaber
-                misforståelser.
-              </p>
-            </div>
-
-            <div><a class="cta-button" href="courses.html">Se kursus</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="dots" id="dots"></div>
-    </section>
-    <!-- Here comes the Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer left">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="img/logo-normal.png" alt="Tallo Logo"
-            /></a>
-          </div>
-          <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
-        </div>
-
-        <div class="footer middle">
-          <h4>Navigation</h4>
-          <a href="index.html">Hjem</a>
-          <a href="courses.html">Kurser</a>
-          <a href="about-us.html">Om os</a>
-          <a href="contact.html">Kontakt os</a>
-        </div>
-
-        <div class="footer right">
-          <h4>Kontakt oplysninger</h4>
-          <a href="mailto:contact@cphbusiness.dk">E-mail: tallo@gmail.com</a>
-          <a href="tel:+4560122584">Tlf: +45 60 12 25 84</a>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-line">
-        <div class="line"></div>
-      </div>
-    </footer>
-  </body>
 </html>
