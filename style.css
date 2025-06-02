@@ -752,19 +752,13 @@ nav a:hover {
 }
 
 .search-bar input {
-  background-color: var(--primer-color);
+  border: unset;
+  border: 2px solid var(--sekunder-color);
+    background-color: var(--primer-color);
   color: var(--sekunder-color);
   border-radius: var(--radius-3);
-  min-width: 70%;
   padding: var(--gap-0);
   text-align: center;
-}
-
-.search-bar-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--gap-0);
 }
 
 .input-wrapper {
