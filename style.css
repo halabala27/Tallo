@@ -1395,6 +1395,7 @@ footer {
   html,
   body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     /* Disable horizontal scrolling */
   }
 
