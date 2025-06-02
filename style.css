@@ -176,7 +176,10 @@ nav a:hover {
 
 .btt {
   all: unset;
-  display: none;
+  will-change: opacity, transform;
+  transform: translateZ(0);
+  visibility: hidden;
+
   background-image: url("img/btt-2.svg");
   height: 60px;
   width: 60px;
@@ -184,24 +187,23 @@ nav a:hover {
   background-position: center center;
   background-size: contain;
   border-radius: var(--radius);
+  box-shadow: #1c1c1c 0px 0px 10px 0px;
+  
   position: fixed;
   z-index: 4;
   bottom: var(--gap-2);
   right: var(--gap-2);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-  box-shadow: #1c1c1c 0px 0px 10px 0px;
- will-change: opacity, transform;
-  transform: translateZ(0);
 
-  /* Add this: */
-  display: block;             /* always block */
-  pointer-events: none;       /* disable clicks when hidden */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  cursor: pointer;
+  
+ 
 }
 
 .btt.visible {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;       /* enable clicks when visible */
   cursor: pointer;
 }
