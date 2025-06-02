@@ -180,7 +180,8 @@ nav a:hover {
   height: 60px;
   width: 60px;
   background-repeat: no-repeat;
-  background-position: unset;
+  background-position: center center;
+  background-size: contain;
   border-radius: var(--radius);
   position: fixed;
   z-index: 4;
@@ -190,12 +191,15 @@ nav a:hover {
   transition: opacity 0.3s ease;
   cursor: pointer;
   box-shadow: #1c1c1c 0px 0px 10px 0px;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 
 .btt.visible {
   display: block;
   opacity: 1;
   cursor: pointer;
+  pointer-events: all;
 }
 
 /* Hover animation */
