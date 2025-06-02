@@ -1324,7 +1324,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
 .courses-content {
   display: grid;
   grid-auto-flow: column;
@@ -1333,6 +1332,12 @@ footer {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: var(--gap-2);
+
+  /* Added for smooth momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+
+  /* Hint browser for smooth animations */
+  will-change: transform;
 }
 
 .box {
@@ -1340,6 +1345,13 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  /* Added to prevent shrinking and stabilize layout */
+  min-width: 100%;
+  flex-shrink: 0;
+
+  /* Hint browser for smooth animations */
+  will-change: transform;
 }
 
 .top img, .top {
@@ -1363,7 +1375,6 @@ footer {
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  
 }
 
 .left-btn {
@@ -1655,6 +1666,12 @@ footer {
 
     
   } 
+
+   .courses-content {
+    scroll-behavior: auto;           /* Disable smooth scroll on small screens */
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+  }
+
 
   .scroll-btn{display: none;}
 
