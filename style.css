@@ -694,13 +694,8 @@ nav a:hover {
   color: var(--highlight-color);
 }
 
-/* Responsive fix */
-@media (max-width: 600px) {
-  .team-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
+
 
 /* Infomation section */
 .big-quote {
@@ -1659,6 +1654,11 @@ footer {
 
   .scroll-btn{display: none;}
 
+   .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: left;
@@ -1673,4 +1673,6 @@ footer {
   .footer.right {
     grid-column: auto;
   }
+
+
 }
