@@ -176,6 +176,7 @@ nav a:hover {
 
 .btt {
   all: unset;
+  display: none;
   background-image: url("img/btt-2.svg");
   height: 60px;
   width: 60px;
@@ -191,7 +192,7 @@ nav a:hover {
   transition: opacity 0.3s ease;
   cursor: pointer;
   box-shadow: #1c1c1c 0px 0px 10px 0px;
-  will-change: opacity;
+ will-change: opacity, transform;
   transform: translateZ(0);
 
   /* Add this: */
