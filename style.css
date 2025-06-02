@@ -293,7 +293,7 @@ nav a:hover {
 
 .courses-content {
   display: flex;
-  gap: 20px;
+  gap: var(--gap-1);
   align-items: stretch;
   /* Makes all boxes the same height */
 }
@@ -645,7 +645,7 @@ nav a:hover {
   background-color: var(--sekunder-color);
   border-radius: var(--radius-3);
   width: 220px;
-  padding: 16px;
+  padding: var(--gap-1);
   color: var(--primer-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -701,7 +701,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: var(--gap-1);
-  margin-top: 30px;
+  margin-top: var(--gap-2);
   font-style: italic;
 }
 
@@ -783,7 +783,7 @@ nav a:hover {
   stroke: var(--highlight-color);
   /* Color on stroke */
   stroke-width: var(--gap-3);
-  right: 12px;
+  right: var(--gap-0);
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
