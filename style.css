@@ -1331,7 +1331,7 @@ footer {
 .courses-content {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 90%;
+  grid-auto-columns: 100%;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -1370,11 +1370,11 @@ footer {
 }
 
 .left-btn {
-  left: var(--gap-2);
+  left: var(--gap-1);
 }
 
 .right-btn {
-  right: var(--gap-2);
+  right: var(--gap-1);
 }
 
 .dots {
