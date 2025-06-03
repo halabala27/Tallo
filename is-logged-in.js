@@ -12,17 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
     profileLink?.style.setProperty("display", "none");
   }
 
-  // 2) Gate the "Start kursus" button
-  const startBtn = document.getElementById("start-course-btn");
-  if (startBtn) {
-    startBtn.addEventListener("click", (e) => {
+  // 2) Gate all course access buttons
+  const courseLinks = document.querySelectorAll(".course-access");
+  courseLinks.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
       if (!user) {
         e.preventDefault();
-        // Remember where to go after successful login
-        localStorage.setItem("redirectAfterLogin", startBtn.href);
-        // Send them to login
+        localStorage.setItem("redirectAfterLogin", btn.href);
         window.location.href = "login.html";
       }
     });
-  }
+  });
 });

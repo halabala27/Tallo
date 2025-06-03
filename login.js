@@ -3,7 +3,7 @@ const users = [
   {
     username: "lene",
     password: "1234",
-    avatar: "img/lene.png",
+    avatar: "img/lene-update.jpg",
     fulde_navn: "Lene Juhl Nielsen",
     email: "ljni@cphbusiness.dk",
     telefon: "+45 36 15 49 37",
@@ -13,7 +13,7 @@ const users = [
   {
     username: "ditlev",
     password: "pass",
-    avatar: "img/ditlev.png",
+    avatar: "img/ditlev-update.jpg",
     fulde_navn: "Ditlev Skanderby",
     email: "dsk@cphbusiness.dk",
     telefon: "+45 36 15 47 17",
@@ -23,7 +23,7 @@ const users = [
   {
     username: "marc",
     password: "abcd",
-    avatar: "img/marc.png",
+    avatar: "img/marc-update.jpg",
     fulde_navn: "Marc Kluge",
     email: "klu@cphbusiness.dk",
     telefon: "+45 36 15 47 32",
