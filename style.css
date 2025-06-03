@@ -829,16 +829,41 @@ nav a:hover {
 }
 
 /* video-course Page */
-/* Completion Screen Styling */
+
+/* close button */
+.go-back {
+  all: unset;
+  background-image: url("img/close-2.svg");
+  height: var(--gap-2);
+  width: var(--gap-2);
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: absolute;
+  z-index: 4;
+  top: var(--gap-2);
+  left: var(--gap-2);
+  cursor: pointer;
+}
+
+/* Video section */
 .video-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
-  /* match your video height */
+  max-height: 90vh;
   padding: var(--gap-2);
   background: var(--sekunder-color);
+  position: relative;
 }
+
+/* Video */
+
+.video-container video{
+  max-width: 90%;
+}
+
+/* Completion Screen Styling */
+
 
 .video-container .completion-screen {
   background: var(--primer-color);
@@ -877,7 +902,10 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+
+
 /* Choice buttons */
+
 
 #choice-container {
   position: absolute;
@@ -890,6 +918,12 @@ nav a:hover {
   align-items: flex-end;
   max-width: 100%;
   z-index: 10;
+}
+
+#options-container {
+  display: none;
+  position: absolute;
+  bottom: var(--gap-3);
 }
 
 .choice-block {
@@ -922,25 +956,8 @@ nav a:hover {
   }
 }
 
-.course-video {
-  height: 90vh;
-  width: 100%;
-  background-color: var(--sekunder-color);
-}
 
-.go-back {
-  all: unset;
-  background-image: url("img/close-2.svg");
-  height: var(--gap-2);
-  width: var(--gap-2);
-  background-repeat: no-repeat;
-  background-position: unset;
-  position: absolute;
-  z-index: 4;
-  top: var(--gap-2);
-  left: var(--gap-2);
-  cursor: pointer;
-}
+/* Other page content */
 
 .course-content {
   display: grid;
@@ -951,20 +968,11 @@ nav a:hover {
   padding: var(--gap-1) var(--gap-3);
 }
 
-video {
-  height: 85vh;
-}
 
-#options-container {
-  display: none;
-  position: absolute;
-  bottom: var(--gap-3);
-}
 
-.choice-button {
-  margin: var(--gap-1) var(--gap-3);
-  scale: 1;
-}
+
+
+
 
 /* Contact us Page */
 
