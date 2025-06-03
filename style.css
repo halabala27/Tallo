@@ -46,6 +46,56 @@ body {
   color: var(--sekunder-color);
 }
 
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: var(--primer-color);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: var(--gap-1);
+}
+
+.dots {
+  display: flex;
+  gap: var(--gap-1);
+}
+
+.loading-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--sekunder-color);
+  animation: pulse 1.2s infinite;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: var(--sekunder-color);
+  }
+  50% {
+    background-color: var(--highlight-color);
+  }
+}
+
+
 /* Navigation and header */
 
 header {
@@ -913,11 +963,11 @@ nav a:hover {
 
 #choice-container {
   position: absolute;
-  bottom: var(--gap-4);
+  bottom: var(--gap-2);
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: var(--gap-1);
+  gap: var(--gap-2);
   justify-content: center;
   align-items: flex-end;
   max-width: 100%;

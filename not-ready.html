@@ -13,6 +13,7 @@
   <script defer src="burgermenu.js"></script>
   <script defer src="btt.js"></script>
   <script defer src="goback.js"></script>
+  <script defer src="loader.js"></script>
 
 </head>
 <!-- Google tag (gtag.js) -->
@@ -27,6 +28,16 @@
 
 <body>
 
+    <div id="loader">
+    <img src="img/logo-normal.png" alt="Logo" class="logo" />
+    <div class="dots">
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+    </div>
+  </div>
+
+  <div class="content" style="display: none;">
 
   <button class="btt"></button>
 
@@ -57,8 +68,6 @@
   </header>
 
 
-
-
   <!-- 404 content -->
   <div class="notfound-page">
     <main class="notfound-container">
@@ -67,7 +76,7 @@
       <p>Det ser ud til, at den side du leder efter, ikke findes.</p>
       <button class="cta-button close-button">Gå Tilbage</button>
     </main>
-
+  
     <!-- Here comes the Footer -->
     <footer>
       <div class="footer-container">
@@ -102,7 +111,9 @@
         <div class="line"></div>
       </div>
     </footer>
-  </div>
+  
+    </div>
+</div>
 </body>
 
 </html>

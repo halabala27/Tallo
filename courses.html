@@ -16,6 +16,7 @@
   <script defer src="burgermenu.js"></script>
   <script defer src="btt.js"></script>
   <script defer src="login.js"></script>
+  <script defer src="loader.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y6X7QG16Y"></script>
@@ -28,6 +29,17 @@
 </script>
 
 <body>
+
+    <div id="loader">
+    <img src="img/logo-normal.png" alt="Logo" class="logo" />
+    <div class="dots">
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+    </div>
+  </div>
+
+<div class="content" style="display: none;">
   <button class="btt"></button>
 
   <!-- Navigation -->
@@ -217,6 +229,7 @@
       <div class="line"></div>
     </div>
   </footer>
+</div>
 </body>
 
 </html>

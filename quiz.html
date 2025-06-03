@@ -14,6 +14,7 @@
   <script defer src="redirect.js"></script>
   <script defer src="quiz.js"></script>
   <script defer src="goback.js"></script>
+  <script defer src="loader.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y6X7QG16Y"></script>
@@ -26,6 +27,18 @@
 </script>
 
 <body class="quiz-body">
+
+    <div id="loader">
+    <img src="img/logo-normal.png" alt="Logo" class="logo" />
+    <div class="dots">
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+      <span class="loading-dot"></span>
+    </div>
+  </div>
+  
+  <div class="content" style="display: none;">
+
   <button class="close-button" onclick="goBackOrRedirect()"></button>
 
   <section class="quizz-content">
@@ -42,6 +55,8 @@
   </section>
   <div class="waves quiz"></div>
   <div class="bluebox"></div>
+
+</div>
 </body>
 
 </html>
