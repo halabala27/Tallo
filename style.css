@@ -850,16 +850,20 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 90vh;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
   padding: var(--gap-2);
   background: var(--sekunder-color);
-  position: relative;
+  
 }
 
 /* Video */
 
-.video-container video{
-  max-width: 90%;
+#quiz-video{
+    position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* Completion Screen Styling */
