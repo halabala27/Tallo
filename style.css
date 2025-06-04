@@ -1390,6 +1390,8 @@ footer {
   .courses {
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  text-align: left;
 }
 .courses-content {
   width: 80%;
