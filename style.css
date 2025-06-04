@@ -40,6 +40,13 @@
   font-family: var(--font-family);
 }
 
+  html,
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Disable horizontal scrolling */
+  }
+
 body {
   margin: 0;
   background-color: var(--primer-color);
@@ -1476,12 +1483,7 @@ footer {
 
 /* Responsive layout - bigger phones*/
 @media (max-width: 850px) {
-  html,
-  body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    /* Disable horizontal scrolling */
-  }
+
 
   header {
     grid-template-columns: auto auto;
