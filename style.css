@@ -40,12 +40,12 @@
   font-family: var(--font-family);
 }
 
-  html,
-  body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    /* Disable horizontal scrolling */
-  }
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Disable horizontal scrolling */
+}
 
 body {
   margin: 0;
@@ -94,14 +94,14 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     background-color: var(--sekunder-color);
   }
   50% {
     background-color: var(--highlight-color);
   }
 }
-
 
 /* Navigation and header */
 
@@ -245,7 +245,7 @@ nav a:hover {
   background-size: contain;
   border-radius: var(--radius);
   box-shadow: #1c1c1c 0px 0px 10px 0px;
-  
+
   position: fixed;
   z-index: 4;
   bottom: var(--gap-2);
@@ -254,17 +254,14 @@ nav a:hover {
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   cursor: pointer;
-  
- 
 }
 
 .btt.visible {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;       /* enable clicks when visible */
+  pointer-events: auto; /* enable clicks when visible */
   cursor: pointer;
 }
-
 
 /* Hover animation */
 .cta-button:hover,
@@ -364,6 +361,14 @@ nav a:hover {
   gap: var(--gap-1);
   align-items: stretch;
   /* Makes all boxes the same height */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.courses-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .box {
@@ -382,9 +387,8 @@ nav a:hover {
   padding: var(--gap-2);
 }
 
-
-
-.top img, .top{
+.top img,
+.top {
   height: 30vh;
   width: 100%;
   object-fit: fill;
@@ -436,7 +440,9 @@ nav a:hover {
   display: inline-block;
 }
 
-.scroll-btn{display: none;}
+.scroll-btn {
+  display: none;
+}
 
 /* log in page */
 .main-container {
@@ -753,16 +759,13 @@ nav a:hover {
   opacity: 1;
 }
 
-.external-link{
+.external-link {
   color: var(--highlight-color);
 }
 
-.external-link:visited{
+.external-link:visited {
   color: var(--highlight-color);
 }
-
-
-
 
 /* Infomation section */
 .big-quote {
@@ -795,7 +798,7 @@ nav a:hover {
   margin-top: var(--gap-2);
 }
 
-.search-bar-header{
+.search-bar-header {
   text-align: center;
   margin-top: var(--gap-2);
 }
@@ -821,7 +824,7 @@ nav a:hover {
 .search-bar input {
   border: unset;
   border: 2px solid var(--sekunder-color);
-    background-color: var(--primer-color);
+  background-color: var(--primer-color);
   color: var(--sekunder-color);
   border-radius: var(--radius-3);
   padding: var(--gap-0);
@@ -912,19 +915,17 @@ nav a:hover {
   height: 90vh;
   padding: var(--gap-2);
   background: var(--sekunder-color);
-  
 }
 
 /* Video */
 
-#quiz-video{
-    position: absolute;
+#quiz-video {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
 /* Completion Screen Styling */
-
 
 .video-container .completion-screen {
   background: var(--primer-color);
@@ -963,10 +964,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-
-
 /* Choice buttons */
-
 
 #choice-container {
   position: absolute;
@@ -1017,7 +1015,6 @@ nav a:hover {
   }
 }
 
-
 /* Other page content */
 
 .course-content {
@@ -1028,12 +1025,6 @@ nav a:hover {
   max-width: var(--max-width);
   padding: var(--gap-1) var(--gap-3);
 }
-
-
-
-
-
-
 
 /* Contact us Page */
 
@@ -1347,8 +1338,7 @@ footer {
 }
 
 @media (max-width: 1200px) {
-
-    .hero,
+  .hero,
   .intro-content,
   .courses,
   .profile-content,
@@ -1362,17 +1352,14 @@ footer {
   .map-container,
   .formular-container,
   .course-box {
-
     padding-bottom: var(--gap-2);
   }
-
- 
 
   .intro-image img {
     border-radius: var(--radius-2);
     max-height: 35vh;
   }
-   
+
   /* Courses resume front page */
 
   .top-left,
@@ -1388,101 +1375,91 @@ footer {
   }
 
   .courses {
-  position: relative;
-  overflow: hidden;
-  justify-content: center;
-  text-align: left;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    text-align: left;
+  }
+  .courses-content {
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: var(--gap-3);
+
+    /* Added for smooth momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .box {
+    scroll-snap-align: start;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    /* Added to prevent shrinking and stabilize layout */
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .top img,
+  .top {
+    width: 100%;
+    height: 35vh;
+    object-fit: fill;
+  }
+
+  .scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--highlight-color);
+    color: var(--primer-color);
+    border: none;
+    font-size: 3rem;
+    z-index: 2;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .left-btn {
+    left: var(--gap-3);
+  }
+
+  .right-btn {
+    right: var(--gap-3);
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--sekunder-color);
+    cursor: pointer;
+  }
+
+  .dots .dot.active {
+    background: var(--highlight-color);
+  }
 }
-.courses-content {
-  width: 80%;
-  justify-self: center;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 100%;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: var(--gap-3);
-
-  /* Added for smooth momentum scrolling on iOS */
-  -webkit-overflow-scrolling: touch;
-
-
-}
-
-.box {
-  scroll-snap-align: start;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-
-  /* Added to prevent shrinking and stabilize layout */
-  min-width: 100%;
-  flex-shrink: 0;
-
-
-}
-
-.top img, .top {
-  width: 100%;
-  height: 35vh;
-  object-fit: fill;
-}
-
-.scroll-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--highlight-color);
-  color: var(--primer-color);
-  border: none;
-  font-size: 3rem;
-  z-index: 2;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.left-btn {
-  left: var(--gap-3);
-}
-
-.right-btn {
-  right: var(--gap-3);
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-
-.dots .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--sekunder-color);
-  cursor: pointer;
-}
-
-.dots .dot.active {
-  background: var(--highlight-color);
-}
-
-
-
-
-}
-
 
 /* Responsive layout - bigger phones*/
 @media (max-width: 850px) {
-
-
   header {
     grid-template-columns: auto auto;
     grid-auto-flow: row;
@@ -1531,7 +1508,6 @@ footer {
     margin: 2px;
     padding: 3px;
     border-radius: var(--radius-3);
-  
   }
 
   nav {
@@ -1602,9 +1578,6 @@ footer {
     padding-bottom: var(--gap-2);
   } */
 
-
-  
-
   .profile-card,
   .login-box {
     margin-left: var(--gap-1);
@@ -1620,7 +1593,7 @@ footer {
     display: none;
   }
 
-   .intro-content {
+  .intro-content {
     grid-auto-flow: row;
     width: 100%;
     grid-template-columns: 100%;
@@ -1718,8 +1691,7 @@ footer {
 
 /* small phone */
 @media (max-width: 600px) {
-
-    .hero,
+  .hero,
   .intro-content,
   .courses,
   .profile-content,
@@ -1746,24 +1718,23 @@ footer {
     width: 100%;
   }
 
-    .courses-content {
+  .courses-content {
     display: grid;
     grid-auto-flow: row;
     grid-auto-columns: auto;
+  }
 
-    
-  } 
-
-   .courses-content {
+  .courses-content {
     width: 100%;
-    scroll-behavior: auto;           /* Disable smooth scroll on small screens */
+    scroll-behavior: auto; /* Disable smooth scroll on small screens */
     -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
   }
 
+  .scroll-btn {
+    display: none;
+  }
 
-  .scroll-btn{display: none;}
-
-   .team-container {
+  .team-container {
     flex-direction: column;
     align-items: center;
   }
@@ -1782,6 +1753,4 @@ footer {
   .footer.right {
     grid-column: auto;
   }
-
-
 }
