@@ -42,33 +42,44 @@
     </div>
 
     <div class="content" style="display: none">
-      <button class="btt"></button>
+      <button class="btt" aria-label="Til toppen"></button>
       <header>
         <div class="logo">
           <a href="index.html"
-            ><img src="img/logo-normal-update.webp" alt="Tallo Logo"
+            ><img
+              src="img/logo-normal-update.webp"
+              alt="Tallo Logo"
+              aria-label="Til forsiden"
           /></a>
         </div>
 
         <!-- Burger button (only shows on mobile) -->
-        <button class="burger" id="burger" aria-label="Toggle menu">
+        <button class="burger" id="burger" aria-label="Åben Menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav id="mobile-nav">
+        <nav role="navigation" id="mobile-nav">
           <a href="index.html">Hjem</a>
           <a href="courses.html">Kurser</a>
           <a href="about-us.html">Om os</a>
           <a href="contact.html">Kontakt os</a>
           <!-- Login / Profil -->
-          <a href="login.html" class="login-btn" id="login-button">Log ind</a>
+          <a
+            href="login.html"
+            class="login-btn"
+            id="login-button"
+            aria-label="Log ind på din profil"
+            >Log ind</a
+          >
           <a
             href="profile.html"
             class="login-btn"
             id="profile-link"
             style="display: none"
+            aria-label="Gå til din profil"
+            aria-current="Nuværende side"
             >Min profil</a
           >
         </nav>
@@ -82,13 +93,16 @@
           <div class="footer left">
             <div class="logo">
               <a href="index.html"
-                ><img src="img/logo-normal-update.webp" alt="Tallo Logo"
+                ><img
+                  src="img/logo-normal-update.webp"
+                  alt="Tallo Logo"
+                  aria-label="Til forsiden"
               /></a>
             </div>
             <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
           </div>
 
-          <div class="footer middle">
+          <div role="navigation" class="footer middle">
             <h4>Navigation</h4>
             <a href="index.html">Hjem</a>
             <a href="courses.html">Kurser</a>

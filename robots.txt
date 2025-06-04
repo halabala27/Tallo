@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://artbyhala.dk/Tallo/Tallo/sitemap.xml

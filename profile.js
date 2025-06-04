@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>${user.beskrivelse}</p>
       <p><strong>Email:</strong> ${user.email}</p>
       <p><strong>Telefon:</strong> ${user.telefon}</p>
-      <button class="cta-button" id="logout">Log ud</button>
+      <button class="cta-button" id="logout" aria-label="log ud af din profil">Log ud</button>
     </section>
 
     <section class="course-card hidden-mobile">

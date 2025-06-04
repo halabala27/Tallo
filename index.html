@@ -47,12 +47,15 @@
     </div>
 
     <div class="content" style="display: none">
-      <button class="btt"></button>
+      <button class="btt" aria-label="Til toppen"></button>
       <!-- Navigation -->
       <header>
         <div class="logo">
           <a href="index.html"
-            ><img src="img/logo-normal-update.webp" alt="Tallo Logo"
+            ><img
+              src="img/logo-normal-update.webp"
+              alt="Tallo Logo"
+              aria-label="Til forsiden"
           /></a>
         </div>
 
@@ -63,18 +66,25 @@
           <span></span>
         </button>
 
-        <nav id="mobile-nav">
+        <nav role="navigation" id="mobile-nav">
           <a class="active" href="index.html">Hjem</a>
           <a href="courses.html">Kurser</a>
           <a href="about-us.html">Om os</a>
           <a href="contact.html">Kontakt os</a>
           <!-- Login / Profil -->
-          <a href="login.html" class="login-btn" id="login-button">Log ind</a>
+          <a
+            href="login.html"
+            class="login-btn"
+            id="login-button"
+            aria-label="Log ind på din profil"
+            >Log ind</a
+          >
           <a
             href="profile.html"
             class="login-btn"
             id="profile-link"
             style="display: none"
+            aria-label="Gå til din profil"
             >Min profil</a
           >
         </nav>
@@ -88,7 +98,9 @@
             vores kurser viser, hvordan man bygger broer mellem mennesker.
           </p>
 
-          <a class="cta-button" href="courses.html">Se kurser</a>
+          <a class="cta-button" href="courses.html" aria-label="Se kurser"
+            >Se kurser</a
+          >
         </div>
 
         <div class="intro-image hidden-mobile">
@@ -117,7 +129,12 @@
               og forstået.
             </p>
 
-            <a class="cta-button" href="about-us.html">Læs om os</a>
+            <a
+              class="cta-button"
+              href="about-us.html"
+              aria-label="Gå til om os'"
+              >Læs om os</a
+            >
           </div>
         </div>
       </section>
@@ -148,7 +165,10 @@
               </div>
 
               <div>
-                <a class="cta-button" href="courses.html#communicationVerbal"
+                <a
+                  class="cta-button"
+                  href="courses.html#communicationVerbal"
+                  aria-label="Se kursus om mundtlig kommunikation"
                   >Se kursus</a
                 >
               </div>
@@ -168,7 +188,10 @@
                 </p>
               </div>
               <div>
-                <a class="cta-button" href="courses.html#communicationWritten"
+                <a
+                  class="cta-button"
+                  href="courses.html#communicationWritten"
+                  aria-label="Se kursus om skriftlig kommunikation"
                   >Se kursus</a
                 >
               </div>
@@ -190,7 +213,10 @@
               </div>
 
               <div>
-                <a class="cta-button" href="courses.htmlLanguageBarrier"
+                <a
+                  class="cta-button"
+                  href="courses.html#languageBarrier"
+                  aria-label="Se kursus om sprogbarrierer"
                   >Se kursus</a
                 >
               </div>
@@ -206,13 +232,16 @@
           <div class="footer left">
             <div class="logo">
               <a href="index.html"
-                ><img src="img/logo-normal-update.webp" alt="Tallo Logo"
+                ><img
+                  src="img/logo-normal-update.webp"
+                  alt="Tallo Logo"
+                  aria-label="Til forsiden"
               /></a>
             </div>
             <p>Firskovvej 18, <br />2800 Kongens Lyngby</p>
           </div>
 
-          <div class="footer middle">
+          <div role="navigation" class="footer middle">
             <h4>Navigation</h4>
             <a href="index.html">Hjem</a>
             <a href="courses.html">Kurser</a>
