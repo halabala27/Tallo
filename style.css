@@ -196,6 +196,60 @@ nav a:hover {
   z-index: 1000;
 }
 
+/* === Theory Section Styling === */
+
+.theory-wrapper {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 var(--gap-3) var(--gap-2);
+  display: flex;
+  flex-direction: column;
+}
+
+.theory-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+  margin-top: var(--gap-4);
+}
+
+.theory-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+  align-items: center;
+}
+
+.theory-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.theory-image {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.theory-image img {
+  width: 100%;
+  border-radius: var(--radius-2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.theory-text {
+  flex: 1 1 50%;
+}
+
+.theory-text h2 {
+  font-size: var(--h2);
+  margin-bottom: var(--gap-1);
+}
+
+.theory-text p {
+  font-size: var(--normal-text);
+  margin-bottom: var(--gap-1);
+  line-height: 1.6;
+}
+
 .exam-popup-box {
   background: var(--primer-color);
   color: var(--sekunder-color);
