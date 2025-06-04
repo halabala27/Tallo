@@ -1,62 +1,62 @@
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets theme-color for the UI, especially used for mobiles -->
+    <meta name="theme-color" content="#3a5964" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="shortcut icon" type="x-icon" href="/img/icon-update.webp" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Sets theme-color for the UI, especially used for mobiles -->
-  <meta name="theme-color" content="#3a5964" />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="shortcut icon" type="x-icon" href="/img/icon-update.webp" />
+    <title>Quiz 1 Kommunikation - Tallo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="is-logged-in.js"></script>
+    <script defer src="redirect.js"></script>
+    <script defer src="quiz.js"></script>
+    <script defer src="goback.js"></script>
+    <script defer src="loader.js"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-6Y6X7QG16Y"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <title>Quiz 1 Kommunikation - Tallo</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="is-logged-in.js"></script>
-  <script defer src="redirect.js"></script>
-  <script defer src="quiz.js"></script>
-  <script defer src="goback.js"></script>
-  <script defer src="loader.js"></script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y6X7QG16Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+    gtag("config", "G-6Y6X7QG16Y");
+  </script>
 
-  gtag('config', 'G-6Y6X7QG16Y');
-</script>
-
-<body class="quiz-body">
-
+  <body class="quiz-body">
     <div id="loader">
-    <img src="img/logo-normal-update.webp" alt="Logo" class="logo" />
-    <div class="dots">
-      <span class="loading-dot"></span>
-      <span class="loading-dot"></span>
-      <span class="loading-dot"></span>
-    </div>
-  </div>
-  
-  <div class="content" style="display: none;">
-
-  <a href="contact-course-1.html" class="go-back" ></a>
-
-  <section class="quizz-content">
-    <h1>Quiz</h1>
-    <div id="quiz-container">
-      <div id="question"></div>
-      <div id="options"></div>
-      <button class="cta-button" id="next-btn">Næste</button>
+      <img src="img/logo-normal-update.webp" alt="Logo" class="logo" />
+      <div class="dots">
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+      </div>
     </div>
 
-    <div id="result"></div>
+    <div class="content" style="display: none">
+      <a href="contact-course-1.html" class="go-back"></a>
 
-    <button class="cta-button" id="retake-btn">Gentag Quizzen</button>
-  </section>
-  <div class="waves quiz"></div>
-  <div class="bluebox"></div>
+      <section class="quizz-content">
+        <h1>Quiz</h1>
+        <div id="quiz-container">
+          <div id="question"></div>
+          <div id="options"></div>
+          <button class="cta-button" id="next-btn">Næste</button>
+        </div>
 
-</div>
-</body>
+        <div id="result"></div>
 
+        <button class="cta-button" id="retake-btn">Gentag Quizzen</button>
+      </section>
+      <div class="waves quiz"></div>
+      <div class="bluebox"></div>
+    </div>
+  </body>
 </html>
