@@ -1405,8 +1405,7 @@ footer {
   /* Added for smooth momentum scrolling on iOS */
   -webkit-overflow-scrolling: touch;
 
-  /* Hint browser for smooth animations */
-  will-change: transform;
+
 }
 
 .box {
@@ -1419,8 +1418,7 @@ footer {
   min-width: 100%;
   flex-shrink: 0;
 
-  /* Hint browser for smooth animations */
-  will-change: transform;
+
 }
 
 .top img, .top {
@@ -1719,7 +1717,24 @@ footer {
 /* small phone */
 @media (max-width: 600px) {
 
-
+    .hero,
+  .intro-content,
+  .courses,
+  .profile-content,
+  .profile-top,
+  .team-container,
+  .fomular-container,
+  .quizz-content,
+  .kursus-content,
+  .search-bar-content,
+  .footer-container,
+  .map-container,
+  .formular-container,
+  .course-box {
+    padding-left: var(--gap-1);
+    padding-right: var(--gap-1);
+    padding-bottom: var(--gap-2);
+  }
   .map-container h2 {
     text-align: center;
     padding: 0;
@@ -1738,6 +1753,7 @@ footer {
   } 
 
    .courses-content {
+    width: 100%;
     scroll-behavior: auto;           /* Disable smooth scroll on small screens */
     -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
   }
