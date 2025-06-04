@@ -699,12 +699,13 @@ nav a:hover {
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   gap: var(--gap-2);
   max-width: var(--max-width);
   padding-left: var(--gap-3);
   padding-right: var(--gap-3);
+  padding-top: var(--gap-1);
   margin: auto;
 }
 
@@ -717,7 +718,6 @@ nav a:hover {
   color: var(--primer-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  text-align: center;
   transition: transform 0.2s ease;
 }
 
@@ -1353,7 +1353,6 @@ footer {
   .courses,
   .profile-content,
   .profile-top,
-  .my-courses,
   .team-container,
   .fomular-container,
   .quizz-content,
@@ -1363,18 +1362,15 @@ footer {
   .map-container,
   .formular-container,
   .course-box {
-    padding-left: var(--gap-4);
-    padding-right: var(--gap-4);
+
     padding-bottom: var(--gap-2);
   }
- .intro-content {
-    grid-auto-flow: row;
-    width: 100%;
-    grid-template-columns: 100%;
-  }
+
+ 
 
   .intro-image img {
     border-radius: var(--radius-2);
+    max-height: 35vh;
   }
    
   /* Courses resume front page */
@@ -1396,13 +1392,15 @@ footer {
   overflow: hidden;
 }
 .courses-content {
+  width: 80%;
+  justify-self: center;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: var(--gap-2);
+  gap: var(--gap-3);
 
   /* Added for smooth momentum scrolling on iOS */
   -webkit-overflow-scrolling: touch;
@@ -1427,7 +1425,7 @@ footer {
 
 .top img, .top {
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   object-fit: fill;
 }
 
@@ -1444,16 +1442,16 @@ footer {
   font-size: 3rem;
   z-index: 2;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 
 .left-btn {
-  left: var(--gap-1);
+  left: var(--gap-3);
 }
 
 .right-btn {
-  right: var(--gap-1);
+  right: var(--gap-3);
 }
 
 .dots {
@@ -1584,7 +1582,7 @@ footer {
     background-image: url("img/waves-7.svg");
   }
 
-  .hero,
+  /* .hero,
   .intro-content,
   .courses,
   .profile-content,
@@ -1602,7 +1600,7 @@ footer {
     padding-left: var(--gap-1);
     padding-right: var(--gap-1);
     padding-bottom: var(--gap-2);
-  }
+  } */
 
 
   
@@ -1620,6 +1618,12 @@ footer {
 
   .hidden-mobile {
     display: none;
+  }
+
+   .intro-content {
+    grid-auto-flow: row;
+    width: 100%;
+    grid-template-columns: 100%;
   }
 
   .course-content {
