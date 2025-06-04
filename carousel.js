@@ -1,3 +1,5 @@
+// Declare interval globally so we can clear it between inits
+let intervalId;
 
 function initCarousel() {
   const isCarouselActive = window.innerWidth >= 600 && window.innerWidth <= 1200;
@@ -7,12 +9,22 @@ function initCarousel() {
   const leftBtn = document.querySelector(".left-btn");
   const rightBtn = document.querySelector(".right-btn");
 
+  // Clear previous interval if it exists
+  if (intervalId) clearInterval(intervalId);
+
+  // Replace buttons to remove previous event listeners
+  const leftBtnClone = leftBtn.cloneNode(true);
+  const rightBtnClone = rightBtn.cloneNode(true);
+  leftBtn.replaceWith(leftBtnClone);
+  rightBtn.replaceWith(rightBtnClone);
+
+  // Exit if not active or missing elements
   if (!isCarouselActive || !carousel || boxes.length === 0) return;
 
   let currentIndex = 0;
   const totalSlides = boxes.length;
 
-  // Clear old dots
+  // Clear existing dots
   dotsContainer.innerHTML = "";
 
   // Create dots
@@ -50,14 +62,22 @@ function initCarousel() {
     scrollToSlide(currentIndex);
   };
 
-  rightBtn.addEventListener("click", nextSlide);
-  leftBtn.addEventListener("click", prevSlide);
+  rightBtnClone.addEventListener("click", nextSlide);
+  leftBtnClone.addEventListener("click", prevSlide);
 
-  setInterval(nextSlide, 7000); // Auto scroll
+  // Start auto scroll
+  intervalId = setInterval(nextSlide, 7000);
 }
 
+// Initial run on load
 window.addEventListener("load", initCarousel);
-window.addEventListener("resize", () => {
-  location.reload(); // Simplest way to re-init layout when resizing
-});
 
+// Debounced resize handler
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    document.getElementById("dots").innerHTML = "";
+    initCarousel();
+  }, 300);
+});
