@@ -1498,6 +1498,7 @@ footer {
 .courses-content {
   display: flex; /* Replaces grid */
   overflow-x: auto;
+  justify-content: center;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; /* iOS momentum scrolling */
