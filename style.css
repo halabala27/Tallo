@@ -1497,6 +1497,7 @@ footer {
   }
   .courses-content {
     width: 80%;
+    justify-content: center;
     justify-self: center;
     display: grid;
     grid-auto-flow: column;
@@ -1504,6 +1505,7 @@ footer {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
+    scroll-snap-align: start;
     gap: var(--gap-3);
 
   
