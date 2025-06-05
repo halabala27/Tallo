@@ -1496,8 +1496,7 @@ footer {
     text-align: left;
   }
   .courses-content {
-    width: 80%;
-    justify-content: center;
+    width: 100%;
     justify-self: center;
     display: grid;
     grid-auto-flow: column;
@@ -1505,13 +1504,14 @@ footer {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scroll-snap-align: start;
     gap: var(--gap-3);
 
-  
+    /* Added for smooth momentum scrolling on iOS */
+    
   }
 
   .box {
+    scroll-snap-align: start;
     overflow: hidden;
     display: flex;
     flex-direction: column;
