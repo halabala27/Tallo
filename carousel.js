@@ -21,6 +21,9 @@ function initCarousel() {
   // Exit if not active or missing elements
   if (!isCarouselActive || !carousel || boxes.length === 0) return;
 
+  // Force scrollLeft to 0 on init to fix iOS Safari offset bug
+  carousel.scrollLeft = 0;
+
   let currentIndex = 0;
   const totalSlides = boxes.length;
 
