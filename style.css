@@ -464,7 +464,6 @@ nav a:hover {
   max-width: var(--max-width);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: var(--gap-3);
 }
 
 .courses p {
@@ -1706,25 +1705,6 @@ footer {
     background-image: url("img/waves-7.svg");
   }
 
-  /* .hero,
-  .intro-content,
-  .courses,
-  .profile-content,
-  .profile-top,
-  .my-courses,
-  .team-container,
-  .fomular-container,
-  .quizz-content,
-  .kursus-content,
-  .search-bar-content,
-  .footer-container,
-  .map-container,
-  .formular-container,
-  .course-box {
-    padding-left: var(--gap-1);
-    padding-right: var(--gap-1);
-    padding-bottom: var(--gap-2);
-  } */
 
   .profile-card,
   .login-box {
@@ -1852,7 +1832,8 @@ footer {
   .footer-container,
   .map-container,
   .formular-container,
-  .course-box, .theory-wrapper {
+  .course-box, 
+  .theory-wrapper {
     padding-left: var(--gap-1);
     padding-right: var(--gap-1);
     padding-bottom: var(--gap-2);
