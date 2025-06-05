@@ -1848,13 +1848,12 @@ width: 80%;
     display: grid;
     grid-auto-flow: row;
     grid-auto-columns: auto;
-  }
-
-  .courses-content {
-    width: 100%;
     scroll-behavior: auto; /* Disable smooth scroll on small screens */
     -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
   }
+
+
+.box{width: 100%;}
 
   .scroll-btn {
     display: none;
