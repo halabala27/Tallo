@@ -353,8 +353,8 @@ nav a:hover {
   visibility: hidden;
 
   background-image: url("img/btt-2.svg");
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -461,6 +461,7 @@ nav a:hover {
   margin-top: var(--gap-2);
   padding-left: var(--gap-3);
   padding-right: var(--gap-3);
+  margin-bottom: var(--gap-2);
   max-width: var(--max-width);
   margin-right: auto;
   margin-left: auto;
