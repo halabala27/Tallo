@@ -16,3 +16,9 @@ searchInput.addEventListener("input", (e) => {
     box.classList.toggle("hidden", !isVisible);
   });
 });
+
+
+
+
+
+

@@ -236,59 +236,6 @@ nav a:hover {
 }
 
 
-/* === Theory Section Styling === */
-
-.theory-wrapper {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 0 var(--gap-3) var(--gap-2);
-  display: flex;
-  flex-direction: column;
-}
-
-.theory-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-2);
-}
-
-.theory-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-2);
-  align-items: center;
-}
-
-.theory-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.theory-image {
-  flex: 1 1 30%;
-  max-width: 500px;
-}
-
-.theory-image img {
-  width: 100%;
-  border-radius: var(--radius-2);
-  object-fit: cover;
-}
-
-.theory-text {
-  flex: 1 1 50%;
-}
-
-.theory-text h2 {
-  font-size: var(--h2);
-  margin-bottom: var(--gap-1);
-}
-
-.theory-text p {
-  font-size: var(--normal-text);
-  margin-bottom: var(--gap-1);
-  line-height: 1.6;
-}
-
 
 @keyframes fadeIn {
   from {
@@ -555,6 +502,16 @@ nav a:hover {
 .scroll-btn {
   display: none;
 }
+
+
+/* === Theory Section Styling === */
+
+
+
+.theory-section p, .theory-section h2 {
+  color: var(--sekunder-color);
+}
+
 
 /* log in page */
 .main-container {
@@ -1651,38 +1608,6 @@ width: 80%;
     pointer-events: auto;
   }
 
-  .theory-row {
-    flex-direction: column !important;
-  }
-
-  .theory-image {
-    width: 100%;
-    height: 200px;
-    max-width: 100%;
-    flex: none;
-  }
-
-  .theory-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: var(--radius-2);
-    object-fit: cover;
-    object-position: top; /* <--- this ensures we see the lower part */
-  }
-
-  .theory-section {
-  gap: var(--gap-0);
-}
-
-  .theory-text {
-    padding-top: var(--gap-1);
-  }
-
-  /* Optional: adjust text layout */
-  .theory-text p {
-    text-align: left;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     /* Ensure 1 column on mobile */
@@ -1829,8 +1754,7 @@ width: 80%;
   .footer-container,
   .map-container,
   .formular-container,
-  .course-box, 
-  .theory-wrapper {
+  .course-box {
     padding-left: var(--gap-1);
     padding-right: var(--gap-1);
     padding-bottom: var(--gap-2);

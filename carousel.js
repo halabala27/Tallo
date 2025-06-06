@@ -84,3 +84,5 @@ window.addEventListener("resize", () => {
     initCarousel();
   }, 300);
 });
+
+
