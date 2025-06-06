@@ -220,20 +220,6 @@ nav a:hover {
   padding-bottom: var(--gap-1);
 }
 
-.popup-button {
-  background-color: var(--sekunder-color);
-  color: var(--primer-color);
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: var(--normal-text);
-  border-radius: var(--radius-2);
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.popup-button:hover {
-  background-color: var(--highlight-color);
-}
 
 
 
