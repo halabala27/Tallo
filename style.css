@@ -508,7 +508,7 @@ nav a:hover {
 
 
 
-.theory-section p, .theory-section h2 {
+.theory-section p, .theory-section h2, .theory-section h3 {
   color: var(--sekunder-color);
 }
 
