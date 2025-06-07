@@ -186,6 +186,8 @@ nav a:hover {
   border-radius: 2px;
 }
 
+/* exam pop-up */
+
 .exam-popup-overlay {
   position: fixed;
   inset: 0;
@@ -219,9 +221,6 @@ nav a:hover {
   margin: auto;
   padding-bottom: var(--gap-1);
 }
-
-
-
 
 @keyframes fadeIn {
   from {

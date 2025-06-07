@@ -11,3 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("examNoticeSeen", "true");
     });
 });
+
+
+
