@@ -968,7 +968,7 @@ nav a:hover {
   overflow: hidden;
   height: 90vh;
   padding: var(--gap-2);
-  background: var(--sekunder-color);
+  background: black;
 }
 
 /* Video */
