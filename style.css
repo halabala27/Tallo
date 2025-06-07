@@ -165,12 +165,9 @@ nav a:hover {
 }
 
 /* Burger menu default (hidden on desktop) */
-.burger {
+.burger button{
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
+  all: unset;
   background: none;
   border: none;
   cursor: pointer;
@@ -1547,9 +1544,12 @@ width: 80%;
   }
 
   .burger {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
+    display: grid;
+    position: fixed;
+    border: none;
+    background: none;
+    width: var(--gap-3);
+    height: var(--gap-2);
     /* Space out lines */
     z-index: 1001;
     right: var(--gap-3);
@@ -1558,7 +1558,7 @@ width: 80%;
   .burger span {
     background-color: var(--highlight-color);
     /* Set burgerMenu lines color */
-    width: var(--gap-2);
+    width: 100%;
     margin: 2px;
     padding: 3px;
     border-radius: var(--radius-3);
@@ -1566,7 +1566,7 @@ width: 80%;
 
   nav {
     position: absolute;
-    top: var(--gap-4);
+    top: var(--gap-5);
     right: var(--gap-1);
     border-radius: var(--radius-3);
     background: var(--sekunder-color);
@@ -1590,6 +1590,7 @@ width: 80%;
 
   nav.show {
     display: flex;
+    position: fixed;
     pointer-events: auto;
   }
 
@@ -1744,6 +1745,12 @@ width: 80%;
     padding-right: var(--gap-1);
     padding-bottom: var(--gap-2);
   }
+
+    .burger {
+    right: var(--gap-1);
+  }
+
+
   .map-container h2 {
     text-align: center;
     padding: 0;
