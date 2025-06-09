@@ -175,6 +175,10 @@ nav a:hover {
   /* Make sure it's clickable */
 }
 
+.burger{
+  display: none;
+}
+
 .burger span {
   display: block;
   height: 3px;
